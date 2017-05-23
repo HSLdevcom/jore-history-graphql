@@ -1,4 +1,4 @@
-# Jore GraphQL importer and server
+# Jore GraphQL server
 
 ### Prerequisites
 
