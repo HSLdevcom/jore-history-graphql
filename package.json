@@ -1,5 +1,5 @@
 {
-  "name": "jore-postgraphql",
+  "name": "jore-graphql",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Hannes Junnila",
