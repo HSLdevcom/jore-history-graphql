@@ -20,5 +20,5 @@ docker build -t hsldevcom/jore-history-graphql .
 
 Start the server:
 ```
-docker run --link jore-history-postgis -e "PG_CONNECTION_STRING=postgres://postgres:mysecretpassword@jore-history-postgis:5432/postgres" -d -p 0.0.0.0:5000:5000 hsldevcom/jore-history-graphql
+docker run --link jore-history-postgis -e "PG_CONNECTION_STRING=postgres://postgres:mysecretpassword@jore-history-postgis:5432/postgres" -d -p 0.0.0.0:5050:5000 hsldevcom/jore-history-graphql
 ```

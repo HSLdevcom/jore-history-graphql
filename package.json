@@ -1,13 +1,13 @@
 {
   "name": "jore-history-graphql",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Hannes Junnila",
+  "author": "Daniel Dunderfelt",
   "license": "MIT",
   "scripts": {
-    "start": "node_modules/.bin/postgraphql -c $PG_CONNECTION_STRING --schema jore --disable-default-mutations --dynamic-json --cors --graphql /jore/graphql --graphiql /jore/graphiql --host 0.0.0.0"
+    "start": "postgraphile -c $PG_CONNECTION_STRING --schema jore --disable-default-mutations --dynamic-json --cors --graphql /jore/graphql --graphiql /jore/graphiql --host 0.0.0.0",
+    "start:local": "PG_CONNECTION_STRING=postgres://postgres:mysecretpassword@localhost:5678/postgres yarn start"
   },
   "dependencies": {
-    "postgraphql": "^3.5.0"
+    "postgraphile": "^4.0.0-rc.4"
   }
 }
