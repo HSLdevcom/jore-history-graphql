@@ -4,10 +4,10 @@
   "author": "Daniel Dunderfelt",
   "license": "MIT",
   "scripts": {
-    "start": "postgraphile -c $PG_CONNECTION_STRING --schema jore --disable-default-mutations --dynamic-json --cors --graphql /jore-history/graphql --graphiql /jore-history/graphiql --host 0.0.0.0",
+    "start": "postgraphile -c $PG_CONNECTION_STRING --schema jore --disable-default-mutations --dynamic-json --cors --graphql /jore-history/graphql --graphiql /jore-history/graphiql --host 0.0.0.0 --body-size-limit 100mb --enable-query-batching",
     "start:local": "PG_CONNECTION_STRING=postgres://postgres:mysecretpassword@localhost:5678/postgres yarn start"
   },
   "dependencies": {
-    "postgraphile": "^4.0.0-rc.4"
+    "postgraphile": "^4.0.1"
   }
 }
