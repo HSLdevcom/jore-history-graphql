@@ -50,9 +50,10 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
-"@types/graphql@^0.13.4":
-  version "0.13.4"
-  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.13.4.tgz#55ae9c29f0fd6b85ee536f5c72b4769d5c5e06b1"
+"@types/graphql@^14.0.3":
+  version "14.0.3"
+  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-14.0.3.tgz#389e2e5b83ecdb376d9f98fae2094297bc112c1c"
+  integrity sha512-TcFkpEjcQK7w8OcrQcd7iIBPjU0rdyi3ldj6d0iJ4PPSzbWqPBvXj9KSwO14hTOX2dm9RoiH7VuxksJLNYdXUQ==
 
 "@types/http-assert@*":
   version "1.3.0"
@@ -186,9 +187,10 @@ color-name@1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
 
-commander@^2.9.0:
-  version "2.17.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
+commander@^2.19.0:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
+  integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
 
 content-type@~1.0.2:
   version "1.0.2"
@@ -216,18 +218,6 @@ depd@1.1.0, depd@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.0.tgz#e1bd82c6aab6ced965b97b88b17ed3e528ca18c3"
 
-depd@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.1.tgz#5783b4e1c459f06fa5ca27f991f3d06e7a310359"
-
-depd@~1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
-
-destroy@~1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
-
 ecdsa-sig-formatter@1.0.10:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.10.tgz#1c595000f04a8897dfb85000892a0f4c33af86c3"
@@ -250,10 +240,6 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
-etag@~1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
-
 finalhandler@^1.0.6:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/finalhandler/-/finalhandler-1.1.1.tgz#eebf4ed840079c83f4249038c9d703008301b105"
@@ -266,54 +252,54 @@ finalhandler@^1.0.6:
     statuses "~1.4.0"
     unpipe "~1.0.0"
 
-fresh@0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
-
-graphile-build-pg@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/graphile-build-pg/-/graphile-build-pg-4.0.1.tgz#b5ddf21881c593b00a7b011bc4fbd22b45cacac1"
-  integrity sha512-f6GZ9vXkdYe8JdKSJwxgXD4qniF+pl2V815OWl++K75QTzOkzDPAo8WlV0XAnhtJbjYAHtgArJ88h7hvDH9Xyg==
+graphile-build-pg@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/graphile-build-pg/-/graphile-build-pg-4.1.0.tgz#036745514fb86d3f90c83d5566f9ea53c4b6f066"
+  integrity sha512-mmUWar1lBdHPZRwquRMdjY87IXE5OPe3dJpd0uiSwhVuZDWBuP5Do7mkgve+gPxCOWyvQ1zILlCW9pxNM7MCUQ==
   dependencies:
     chalk "^2.1.0"
     debug ">=2 <3"
-    graphile-build "4.0.0"
-    graphql-iso-date "^3.2.0"
+    graphile-build "4.1.0"
+    graphql-iso-date "^3.6.0"
     jsonwebtoken "^8.1.1"
     lodash ">=4 <5"
     lru-cache ">=4 <5"
     pg-sql2 "2.2.1"
     postgres-interval "^1.1.1"
 
-graphile-build@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/graphile-build/-/graphile-build-4.0.0.tgz#d9033ffcb7e25950bd82551f2906ce2ca2d5099d"
-  integrity sha512-FYRGriuWNytHknpnJhZRzBeAJ3DEtGUaK5HrwQYgazGzPSeEuzAK2wCtEm8bhuvhBfjpIgQ7s6l3qIg6k6O/xQ==
+graphile-build@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/graphile-build/-/graphile-build-4.1.0.tgz#d1ee6bee8c53ec1b82db3dcd9a343151bdaac8f2"
+  integrity sha512-N1IEmDDgTPIf4jpLVuyhdiuQBpKNu8lMpnVTTmfuYf5GZvGz6hJzTvSZREnIoF3lPQ+JS4zMfb7KuVNOYdYu8Q==
   dependencies:
-    "@types/graphql" "^0.13.4"
+    "@types/graphql" "^14.0.3"
+    chalk "^2.1.0"
     debug ">=2 <3"
-    graphql-parse-resolve-info "4.0.0"
+    graphql-parse-resolve-info "4.1.0"
     lodash ">=4 <5"
     lru-cache ">=4 <5"
     pluralize "^7.0.0"
+    semver "^5.6.0"
 
-graphql-iso-date@^3.2.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/graphql-iso-date/-/graphql-iso-date-3.5.0.tgz#55a1be0efa8d28c1453afd2eb5ce1d052189a513"
+graphql-iso-date@^3.6.0:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/graphql-iso-date/-/graphql-iso-date-3.6.1.tgz#bd2d0dc886e0f954cbbbc496bbf1d480b57ffa96"
+  integrity sha512-AwFGIuYMJQXOEAgRlJlFL4H1ncFM8n8XmoVDTNypNOZyQ8LFDG2ppMFlsS862BSTCDcSUfHp8PD3/uJhv7t59Q==
 
-graphql-parse-resolve-info@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/graphql-parse-resolve-info/-/graphql-parse-resolve-info-4.0.0.tgz#c823e67034c0beba150a4c9365342a107e4272a7"
-  integrity sha512-MgQIivO0mJ1AhgkMjpvSzsGiH3ZsJ2HXvE9vWhp4Hh2S4TjidI4M/caM+GoIwo58kwBNAVEw/Tl+0t7/jxm1Cw==
+graphql-parse-resolve-info@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/graphql-parse-resolve-info/-/graphql-parse-resolve-info-4.1.0.tgz#fa52bc9d8aeec210e3ad92cca30d3c36a5e814c3"
+  integrity sha512-qDRgykBm1rbyGAlduPuGtKXHlZtUcNgM8Rg6C/gDVcLww9vNV6h0nmCulpYYPWzATnAVGV8ISnLUDFCU9Y+qcA==
   dependencies:
-    "@types/graphql" "^0.13.4"
+    "@types/graphql" "^14.0.3"
     debug ">=2 <3"
 
-"graphql@^0.6.0 || ^0.7.0 || ^0.8.0-b || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0":
-  version "0.13.2"
-  resolved "http://registry.npmjs.org/graphql/-/graphql-0.13.2.tgz#4c740ae3c222823e7004096f832e7b93b2108270"
+"graphql@^0.6.0 || ^0.7.0 || ^0.8.0-b || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.2":
+  version "14.0.2"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.0.2.tgz#7dded337a4c3fd2d075692323384034b357f5650"
+  integrity sha512-gUC4YYsaiSJT1h40krG3J+USGlwhzNTXSb4IOZljn9ag5Tj+RkoXrWp+Kh7WyE3t1NCfab5kzCuxBIvOMERMXw==
   dependencies:
-    iterall "^1.2.1"
+    iterall "^1.2.2"
 
 has-ansi@^2.0.0:
   version "2.0.0"
@@ -334,15 +320,6 @@ http-errors@^1.5.1, http-errors@~1.6.1:
     setprototypeof "1.0.3"
     statuses ">= 1.3.1 < 2"
 
-http-errors@~1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.6.2.tgz#0a002cc85707192a7e7946ceedc11155f60ec736"
-  dependencies:
-    depd "1.1.1"
-    inherits "2.0.3"
-    setprototypeof "1.0.3"
-    statuses ">= 1.3.1 < 2"
-
 iconv-lite@0.4.15:
   version "0.4.15"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.15.tgz#fe265a218ac6a57cfe854927e9d04c19825eddeb"
@@ -351,9 +328,10 @@ inherits@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
-iterall@^1.2.1:
+iterall@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.2.2.tgz#92d70deb8028e0c39ff3164fdbf4d8b088130cd7"
+  integrity sha512-yynBb1g+RFUPY64fTrFv7nsjRrENBQJaX2UL+2Szc9REFrSNm1rpSXHGzhmAy7a9uv3vlvgBlXnf9RqmPH1/DA==
 
 jsonwebtoken@^8.0.0, jsonwebtoken@^8.1.1:
   version "8.3.0"
@@ -412,7 +390,7 @@ lodash.once@^4.0.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
 
-"lodash@>=3.5 <5", "lodash@>=4 <5":
+"lodash@>=4 <5":
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
@@ -436,10 +414,6 @@ mime-types@~2.1.13:
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.14.tgz#f7ef7d97583fcaf3b7d282b6f8b5679dab1e94ee"
   dependencies:
     mime-db "~1.26.0"
-
-mime@1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
 
 moment@>=2.14.0:
   version "2.22.2"
@@ -467,11 +441,7 @@ packet-reader@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/packet-reader/-/packet-reader-0.3.1.tgz#cd62e60af8d7fea8a705ec4ff990871c46871f27"
 
-parseurl@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.1.tgz#c8ab8c9223ba34888aa64a297b28853bec18da56"
-
-parseurl@~1.3.2:
+parseurl@^1.3.2, parseurl@~1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.2.tgz#fc289d4ed8993119460c156253262cdc8de65bf3"
 
@@ -523,40 +493,38 @@ pluralize@^7.0.0:
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
   integrity sha512-ARhBOdzS3e41FbkW/XWrTEtukqqLoK5+Z/4UeDaLuSW+39JPeFgs4gCGqsrJHVZX0fUrx//4OF0K1CUGwlIFow==
 
-postgraphile-core@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/postgraphile-core/-/postgraphile-core-4.0.1.tgz#96419a61fc223eb5065373a8fc889eccce50bfd1"
-  integrity sha512-nwLW1JmrC+diUdipCcJwD03ZdFxFopWBvzn3Qc2qdRq6MC8tMzjhzLVruOhGgLXZ1FDVjbvTrI/FURYsPiFbcQ==
+postgraphile-core@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/postgraphile-core/-/postgraphile-core-4.1.0.tgz#9872a6b4211533cc4d93774534aacbdacce79200"
+  integrity sha512-s8CJ5dTCwJd/VIhplAbpWr0Q835MbkRE9Tu0mtnhATqZLDjtGorBROI56qBSJ+OcanRafqzpk+xFZgRwKkQUMw==
   dependencies:
-    "@types/graphql" "^0.13.4"
-    graphile-build "4.0.0"
-    graphile-build-pg "4.0.1"
+    "@types/graphql" "^14.0.3"
+    graphile-build "4.1.0"
+    graphile-build-pg "4.1.0"
 
-postgraphile@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/postgraphile/-/postgraphile-4.0.1.tgz#28e10d7800d682fa73c176d1dda0b8d5e8b98c92"
-  integrity sha512-aTzGopvZlVkFbz2aHJfGbypHTaGB7QnuBTgv644/qNE5X2nxzvbnm/KWNouNNtFjUod/pt4ctU3PYWt7IqCk2Q==
+postgraphile@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/postgraphile/-/postgraphile-4.1.0.tgz#80d8acd84e645834d707c3f332ef60bce53b08ae"
+  integrity sha512-efTJvn4+h4aljDUDidxdPpJvUrg/IB5Rjqst5XHBM2t/eg9HN27jtlYE5U+1HqKWxE6X0zyR4aVAL8tR13Wjfw==
   dependencies:
-    "@types/graphql" "^0.13.4"
+    "@types/graphql" "^14.0.3"
     "@types/jsonwebtoken" "<7.2.1"
     "@types/koa" "^2.0.44"
     "@types/pg" "^7.4.10"
     body-parser "^1.15.2"
     chalk "^1.1.3"
-    commander "^2.9.0"
+    commander "^2.19.0"
     debug "^2.3.3"
     finalhandler "^1.0.6"
-    graphql "^0.6.0 || ^0.7.0 || ^0.8.0-b || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0"
+    graphql "^0.6.0 || ^0.7.0 || ^0.8.0-b || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.2"
     http-errors "^1.5.1"
     jsonwebtoken "^8.0.0"
-    lodash ">=3.5 <5"
     lru-cache ">=4 <5"
-    parseurl "^1.3.1"
+    parseurl "^1.3.2"
     pg ">=6.1.0 <8"
     pg-connection-string "^0.1.3"
     pg-sql2 "^2.2.1"
-    postgraphile-core "4.0.1"
-    send "^0.16.1"
+    postgraphile-core "4.1.0"
     tslib "^1.5.0"
 
 postgres-array@~1.0.0:
@@ -585,10 +553,6 @@ qs@6.4.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
-range-parser@~1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
-
 raw-body@~2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.2.0.tgz#994976cf6a5096a41162840492f0bdc5d6e7fb96"
@@ -605,23 +569,10 @@ semver@4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/semver/-/semver-4.3.2.tgz#c7a07158a80bedd052355b770d82d6640f803be7"
 
-send@^0.16.1:
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/send/-/send-0.16.2.tgz#6ecca1e0f8c156d141597559848df64730a6bbc1"
-  dependencies:
-    debug "2.6.9"
-    depd "~1.1.2"
-    destroy "~1.0.4"
-    encodeurl "~1.0.2"
-    escape-html "~1.0.3"
-    etag "~1.8.1"
-    fresh "0.5.2"
-    http-errors "~1.6.2"
-    mime "1.4.1"
-    ms "2.0.0"
-    on-finished "~2.3.0"
-    range-parser "~1.2.0"
-    statuses "~1.4.0"
+semver@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
+  integrity sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==
 
 setprototypeof@1.0.3:
   version "1.0.3"

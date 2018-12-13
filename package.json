@@ -8,6 +8,6 @@
     "start:local": "PG_CONNECTION_STRING=postgres://postgres:mysecretpassword@localhost:5678/postgres yarn start"
   },
   "dependencies": {
-    "postgraphile": "^4.0.1"
+    "postgraphile": "^4.1.0"
   }
 }
